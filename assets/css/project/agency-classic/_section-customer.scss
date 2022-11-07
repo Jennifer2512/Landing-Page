@@ -1,0 +1,64 @@
+.secCustomer {
+	background: #f4f4f6;
+	padding: 55px 0 0;
+	&__slide {
+		margin-top: 50px;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		&-item {
+			width: 480px;
+			height: auto;
+			padding: 25px;
+			text-align: left;
+			background: #fff;
+			margin-bottom: 20px;
+			&_txt {
+				font-size: 14px;
+			}
+			img {
+				margin-right: 15px;
+			}
+			&_name {
+				color: #343d48;
+				font-weight: 600;
+			}
+			&_mail {
+				color: #4f96ff;
+				font-size: 14px;
+			}
+		}
+	}
+	div.highway-slider {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		div.highway-barrier {
+			overflow: hidden;
+			position: relative;
+		}
+		ul.highway-lane {
+			height: 100%;
+			li.highway-car {
+				flex: 1;
+				display: flex;
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	@keyframes translateInfinite {
+		100% {
+			transform: translateX(calc(-180px * 7));
+		}
+	}
+	#infinite .highway-barrier {
+		ul.highway-lane {
+			width: 2500px;
+			li.highway-car {
+				width: 480px;
+				animation: translateInfinite 100s linear infinite;
+			}
+		}
+	}
+}

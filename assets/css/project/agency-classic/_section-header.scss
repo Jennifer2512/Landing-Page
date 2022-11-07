@@ -1,0 +1,60 @@
+.secHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 28px;
+	@media (max-width: 768px) {
+		padding: 20px 0;
+	}
+	@media (max-width: 576px) {
+		padding: 20px;
+	}
+	&__logo {
+		color: #02073e;
+		font-size: 20px;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+	}
+	&__nav {
+		@media (max-width: 992px) {
+			display: none;
+		}
+		a {
+			color: #02073e;
+			margin-right: 30px;
+			display: inline-block;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				transform: scaleX(0);
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: #0087ca;
+				transform-origin: bottom right;
+				transition: transform 0.2s ease-out;
+			}
+			&:hover::after {
+				transform: scaleX(1);
+				transform-origin: bottom left;
+			}
+			&:hover {
+				font-weight: 700;
+			}
+			img {
+				width: 10px;
+				height: 8px;
+			}
+		}
+	}
+	&__navMB {
+		display: none;
+		font-size: 25px;
+		@media (max-width: 992px) {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.secFrequently {
+	padding: 80px 0;
+	&__content {
+		margin-top: 80px;
+		@media (max-width: 630px) {
+			flex-direction: column;
+			margin: 0 auto;
+			width: 90%;
+		}
+		&-left {
+			@media (max-width: 630px) {
+				text-align: center !important;
+			}
+		}
+		&-right {
+			width: 1000px;
+			padding: 0 0 0 100px;
+			@media (max-width: 800px) {
+				padding: 0 0 0 60px;
+			}
+			@media (max-width: 630px) {
+				padding: 0;
+				width: 100%;
+				margin-top: 20px;
+			}
+			.js-FAQ {
+				padding: 15px 10px;
+				border: 1.5px solid #edeff2;
+				border-radius: 5px;
+				margin-bottom: 20px;
+				text-align: left;
+				h5 {
+					font-weight: 500;
+					margin-bottom: 0;
+					font-size: 18px;
+				}
+			}
+		}
+		&-detail {
+			margin-top: 10px;
+			font-size: 15px;
+			color: #343d48;
+			opacity: 0.7;
+			line-height: 30px;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+.secFooter {
+	background: #020718;
+	color: #fff;
+	padding-bottom: 20px;
+	&__content {
+		padding: 100px 0 50px;
+		@media (max-width: 630px) {
+			padding: 50px 0;
+		}
+		&-ttl {
+			font-size: 36px;
+			@media (max-width: 900px) {
+				font-size: 26px;
+			}
+			@media (max-width: 630px) {
+				font-size: 20px;
+			}
+		}
+		p {
+			opacity: 0.6;
+			margin: 20px 0;
+			@media (max-width: 630px) {
+				font-size: 15px;
+			}
+		}
+		&-input {
+			border: none;
+			background: #ffffff2c;
+			border-radius: 5px;
+			padding: 15px 30px;
+			width: 380px;
+			&::placeholder {
+				color: #fff;
+			}
+			@media (max-width: 900px) {
+				padding: 10px 25px;
+				width: 300px;
+			}
+			@media (max-width: 630px) {
+				padding: 8px;
+				width: 250px;
+			}
+		}
+		&-btn {
+			border-radius: 5px;
+			padding: 15px;
+			font-weight: 500;
+			border: none;
+			@media (max-width: 900px) {
+				padding: 10px;
+			}
+			@media (max-width: 630px) {
+				font-size: 14px;
+				padding: 8px;
+			}
+		}
+	}
+	@media (max-width: 630px) {
+		img + span {
+			display: none;
+		}
+	}
+
+	&__down {
+		cursor: pointer;
+		@media (max-width: 630px) {
+			font-size: 14px;
+		}
+		span {
+			margin-left: 10px;
+		}
+	}
+}
